@@ -9,13 +9,14 @@
   <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="assets/custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/custom.js"></script>
 </head>
+
 <body>
   <div class="header">
-  <div class="container-fluid pr-lg-0">
+    <div class="container-fluid pr-lg-0">
       <div class="row">
         <div class="col-12 col-lg-6 pt-5 pl-5 pb-lg-0 pb-5">
           <h1>Facebook Developer Circles Boston</h1>
@@ -25,97 +26,85 @@
           <img class="img-fluid w-100" src="assets/header-image.jpg">
         </div>
       </div>
+    </div>
   </div>
-</div>
-    <div class="container p-5">
-        <div class="row">
-            <div class="col-md-5">
-                <h2>Text Message</h2>
-                <p>Subscribe to <strong>text message</strong> notifications.</p>
-                <form action="https://t0szihlsn1.execute-api.us-east-1.amazonaws.com/prod/register"
-                method="post" id="text-subscribe" name="text-subscribe">
-                    <div class="form-group">
-                        <label for="first_name">First Name</label>
-                        <input type="text" class="form-control" value="" placeholder="First Name"
-                        name="first_name" id="first_name">
-                    </div>
-                    <div class="form-group">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" class="form-control" value="" placeholder="Last Name"
-                        name="last_name" id="last_name">
-                    </div>
-                    <div class="mc-field-group form-group">
-                        <label for="number">Phone Number</label>
-                        <input type="tel" class="form-control" value="" name="number"
-                        placeholder="Phone Number" id="number">
-                    </div>
-                    <input type="submit" value="Subscribe" class="btn btn-success" name="subscribe-text"
-                    id="text-subscribe-button">
-                    <br>
-                    <br>
-                    <div id="notification-area"></div>
-                </form>
-            </div>
-            <div class="col-md-5 offset-md-2 pt-5 pt-md-0">
-                <!-- Begin Mailchimp Signup Form -->
-                <div id="mc_embed_signup-container">
-                    <form action="https://henrysaniuk.us8.list-manage.com/subscribe/post?u=0fcb1fb4e05a8a0fd60da3d1b&amp;id=a98399aba4"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                    class="validate" target="_blank" novalidate="">
-                        <div id="mc-signup">
-                            <h2>Email</h2>
-                            <p>Subscribe to <strong>email</strong> notifications.</p>
-                            <div
-                            class="mc-field-group form-group">
-                                <label for="mce-FNAME">First Name</label>
-                                <input type="text" class="form-control" value="" placeholder="First Name"
-                                name="FNAME" id="mce-FNAME">
-                        </div>
-                        <div class="mc-field-group form-group">
-                            <label for="mce-LNAME">Last Name</label>
-                            <input type="text" class="form-control" value="" name="LNAME"
-                            placeholder="Last Name" id="mce-LNAME">
-                        </div>
-                        <div class="mc-field-group form-group">
-                            <label for="mce-EMAIL">Email Address</label>
-                            <input type="email" class="form-control" value=""
-                            name="EMAIL" placeholder="Email Address" id="mce-EMAIL">
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response alert alert-danger" id="mce-error-response" style="display:none"></div>
-                            <div class="response alert alert-success" id="mce-success-response"
-                            style="display:none"></div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-md-5">
+        <h2>Text Message</h2>
+        <p>Subscribe to <strong>text message</strong> notifications.</p>
+        <form action="https://t0szihlsn1.execute-api.us-east-1.amazonaws.com/prod/register" method="post" id="text-subscribe" name="text-subscribe">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" class="form-control" value="" placeholder="First Name" name="first_name" id="first_name">
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" class="form-control" value="" placeholder="Last Name" name="last_name" id="last_name">
+          </div>
+          <div class="mc-field-group form-group">
+            <label for="number">Phone Number</label>
+            <input type="tel" class="form-control" value="" name="number" placeholder="Phone Number" id="number">
+          </div>
+          <input type="submit" value="Subscribe" class="btn btn-success" name="subscribe-text" id="text-subscribe-button">
+          <br>
+          <br>
+          <div id="notification-area"></div>
+        </form>
+      </div>
+      <div class="col-md-5 offset-md-2 pt-5 pt-md-0">
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup-container">
+          <form action="https://henrysaniuk.us8.list-manage.com/subscribe/post?u=0fcb1fb4e05a8a0fd60da3d1b&amp;id=a98399aba4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate="">
+            <div id="mc-signup">
+              <h2>Email</h2>
+              <p>Subscribe to <strong>email</strong> notifications.</p>
+              <div class="mc-field-group form-group">
+                <label for="mce-FNAME">First Name</label>
+                <input type="text" class="form-control" value="" placeholder="First Name" name="FNAME" id="mce-FNAME">
+              </div>
+              <div class="mc-field-group form-group">
+                <label for="mce-LNAME">Last Name</label>
+                <input type="text" class="form-control" value="" name="LNAME" placeholder="Last Name" id="mce-LNAME">
+              </div>
+              <div class="mc-field-group form-group">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="email" class="form-control" value="" name="EMAIL" placeholder="Email Address" id="mce-EMAIL">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response alert alert-danger" id="mce-error-response" style="display:none"></div>
+                <div class="response alert alert-success" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not
                         remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_0fcb1fb4e05a8a0fd60da3d1b_a98399aba4" tabindex="-1"
-                            value="">
-                        </div>
-                        <div class="clear">
-                            <input type="submit" value="Subscribe" class="btn btn-success" name="subscribe"
-                            id="mc-embedded-subscribe">
-                        </div>
-                </div>
-                </form>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_0fcb1fb4e05a8a0fd60da3d1b_a98399aba4" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input type="submit" value="Subscribe" class="btn btn-success" name="subscribe" id="mc-embedded-subscribe">
+              </div>
             </div>
-            <!--End mc_embed_signup-->
+          </form>
         </div>
+        <!--End mc_embed_signup-->
+      </div>
     </div>
     <div class="row">
-        <div class="col-12 text-center text-muted pt-3">
-            <p>By submitting your information in one of the above forms, you agree to
-                receive marketing-related electronic communications from Facebook Developer
-                Circles Boston, including news, updates and promotional emails. You may
-                withdraw your consent and unsubscribe from such emails and/or text messages
-                at any time.</p>
-        </div>
+      <div class="col-12 text-center text-muted pt-3">
+        <p>By submitting your information in one of the above forms, you agree to
+          receive marketing-related electronic communications from Facebook Developer
+          Circles Boston, including news, updates and promotional emails. You may
+          withdraw your consent and unsubscribe from such emails and/or text messages
+          at any time.</p>
+      </div>
     </div>
     <div class="row">
       <div class="col-12 pt-3 pb-3 text-center">
         <img src="assets/FACEBOOK_FamilyLockup_logo_1L_BlueGray_RGB.svg" class="wordmark">
       </div>
     </div>
-    </div>
+  </div>
 </body>
+
 </html>
