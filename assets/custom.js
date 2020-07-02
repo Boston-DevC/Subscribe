@@ -1,5 +1,6 @@
 $(function() {
   $("#text-subscribe").submit(function (e) {
+      e.preventDefault();
       document.getElementById("text-subscribe-button").disabled = true;
       var postData = $(this).serializeArray();
       var formURL = $(this).attr("action");
@@ -24,7 +25,5 @@ $(function() {
               document.getElementById("notification-area").innerHTML = "<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><h4><i class='icon fa fa-exclamation'></i> Error</h4>" + jqXHR.responseJSON.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
           }
       });
-      e.preventDefault(); //STOP default action
-      e.unbind(); //unbind. to stop multiple form submit.
   });
 });
