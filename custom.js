@@ -11,7 +11,8 @@ $(function() {
               document.getElementById("text-subscribe-button").disabled = false;
               if(data.success) {
                 document.getElementById("number").value = "";
-                document.getElementById("name").value = "";
+                document.getElementById("first_name").value = "";
+                document.getElementById("last_name").value = "";
                 document.getElementById("notification-area").innerHTML = "<div class='alert alert-success alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><h4><i class='icon fa fa-exclamation'></i> Success</h4>" + data.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
               } else {
                 document.getElementById("notification-area").innerHTML = "<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><h4><i class='icon fa fa-exclamation'></i> Error</h4>" + data.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
