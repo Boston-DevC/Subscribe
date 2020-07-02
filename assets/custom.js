@@ -14,15 +14,15 @@ $(function() {
                 document.getElementById("number").value = "";
                 document.getElementById("first_name").value = "";
                 document.getElementById("last_name").value = "";
-                document.getElementById("notification-area").innerHTML = "<div class='alert alert-success alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><h4><i class='icon fa fa-exclamation'></i> Success</h4>" + data.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
+                document.getElementById("notification-area").innerHTML = "<div class='alert alert-success alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>" + data.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
               } else {
-                document.getElementById("notification-area").innerHTML = "<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><h4><i class='icon fa fa-exclamation'></i> Error</h4>" + data.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
+                document.getElementById("notification-area").innerHTML = "<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>" + data.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
               }
           },
           error: function (jqXHR, textStatus, errorThrown) {
               //if fails
               document.getElementById("text-subscribe-button").disabled = false;
-              document.getElementById("notification-area").innerHTML = "<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><h4><i class='icon fa fa-exclamation'></i> Error</h4>" + jqXHR.responseJSON.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
+              document.getElementById("notification-area").innerHTML = "<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>" + jqXHR.responseJSON.message + "</div></div><!-- /.box-body --></div><!-- /.box --></div><!-- /.col -->";
           }
       });
   });
