@@ -23,5 +23,6 @@
 }
 
 .wordmark {
-  width: 400px;
+  width: 80%
+  max-width: 400px;
 }
