@@ -10,7 +10,7 @@
 }
 
 .header {
-  background-color: #FEFADB;
+  background-color: #FFFADB;
   color: #E29400;
 }
 
@@ -25,4 +25,21 @@
 .wordmark {
   width: 80%;
   max-width: 400px;
+}
+
+.btn.btn-primary {
+  background-color: #F8AF00 !important;
+  border: #F8AF00 !important;
+}
+
+.alert.alert-danger {
+  background-color: #FBE3DF;
+  border: #FBE3DF;
+  color: #790A1D;
+}
+
+.alert.alert-success {
+  background-color: #B2CDB5;
+  border: #B2CDB5;
+  color: #005A42;
 }
