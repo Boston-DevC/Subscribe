@@ -1,6 +1,6 @@
 # Email and Text Message Subscribe Website
 
-This repo is used to hold the code for the front facing Boston DevC subscribe page for our MailChimp and Twilio subscription sign up forms.
+This repo is used to hold the code for the front facing [Boston DevC subscribe page](https://boston-devc.github.io/Subscribe/) for our MailChimp and Twilio subscription sign up forms.
 
 ## How it's deployed
 
